@@ -23,9 +23,9 @@ jobs:
         with:
           submodules: true
           lfs: false
-      - name: MAIN - Install OIDC Client from Core Package
+      - name: ALL - Install OIDC Client from Core Package
         run: npm install @actions/core@1.6.0 @actions/http-client
-      - name: MAIN - Get Id Token
+      - name: ALL - Get Id Token
         uses: actions/github-script@v6
         id: idtoken
         with:
@@ -33,9 +33,9 @@ jobs:
                const coredemo = require('@actions/core')
                return await coredemo.getIDToken()
            result-encoding: string
-      - name: ALL
+      - name: ALL - Ritsafn YAML
         uses: ./yml/azure-ritsafn-all
-      - name: MAIN
+      - name: MAIN - Ritsafn YAML
         uses: ./yml/azure-ritsafn-main
       - name: MAIN - Build And Deploy
         id: builddeploy
