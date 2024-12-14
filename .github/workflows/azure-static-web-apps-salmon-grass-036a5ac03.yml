@@ -1,4 +1,4 @@
-name: Azure Static Web Apps CI/CD
+name: MAIN - Azure Static Web Apps CI/CD
 
 on:
   push:
@@ -13,18 +13,19 @@ jobs:
   build_and_deploy_job:
     if: github.event_name == 'push' || (github.event_name == 'pull_request' && github.event.action != 'closed')
     runs-on: ubuntu-latest
-    name: Build and Deploy Job
+    name: MAIN - Build and Deploy Job
     permissions:
        id-token: write
        contents: read
     steps:
-      - uses: actions/checkout@v3
+      - name: ALL - Checkout
+        uses: actions/checkout@v4
         with:
           submodules: true
           lfs: false
-      - name: Install OIDC Client from Core Package
+      - name: MAIN - Install OIDC Client from Core Package
         run: npm install @actions/core@1.6.0 @actions/http-client
-      - name: Get Id Token
+      - name: MAIN - Get Id Token
         uses: actions/github-script@v6
         id: idtoken
         with:
@@ -32,7 +33,11 @@ jobs:
                const coredemo = require('@actions/core')
                return await coredemo.getIDToken()
            result-encoding: string
-      - name: Build And Deploy
+      - name: ALL
+        uses: ./yml/azure-ritsafn-all
+      - name: MAIN
+        uses: ./yml/azure-ritsafn-main
+      - name: MAIN - Build And Deploy
         id: builddeploy
         uses: Azure/static-web-apps-deploy@v1
         with:
