@@ -1,0 +1,37 @@
+<div class="tocsection pdf-link" data-depth="{{ html_page_depth }}" data-subfolder="{{ html_subfolder }}">
+  <a id="pdf-link" href="#" class="link-style"><i class="fa-solid fa-file-pdf icon-style"></i>{{ _("Download PDF") }}</a>
+</div>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    // Finna hlekkinn með id="pdf-link"
+    const linkElement = document.getElementById('pdf-link');
+    if (!linkElement) return;
+
+    // Finna elementið sem inniheldur upplýsingar um samhengi
+    const tocSection = document.querySelector('.tocsection.pdf-link');
+    const depth = parseInt(tocSection.getAttribute('data-depth'), 10); // Lesa dýptina úr data-depth eigindinni
+    const subfolder = tocSection.getAttribute('data-subfolder'); // Lesa nafnið á undirmöppunni úr data-subfolder eigindinni
+    
+    let pdfLink = "";
+
+    // Ákvarða PDF hlekkinn byggt á dýptinni
+    if (depth === 0) {
+      // Ef dýptin er 0, þá er PDF skráin í rótarmöppunni
+      pdfLink = `./RUBIK-oll-rit-sameinud.pdf`;
+    } else {
+      let relativePath = "./";
+
+      // Búa til relative path prefix með ../ fyrir hvert dýptarstig yfir 1
+      for (let i = 1; i < depth; i++) {
+        relativePath += "../";
+      }
+
+      // Mynda hlekkinn fyrir undirmöppuna
+      pdfLink = `${relativePath}RUBIK-${subfolder}.pdf`;
+    }
+
+    // Uppfæra href eigindi hlekkjarins með PDF hlekk
+    linkElement.href = pdfLink;
+  });
+</script>

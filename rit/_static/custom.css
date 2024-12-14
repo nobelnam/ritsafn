@@ -1,0 +1,1041 @@
+/* Sækja DIN Next og skilgreina */
+
+@font-face {
+  font-family: "DIN Next";
+  font-weight: 200;
+  font-style: normal;
+  /* font-display: swap; */
+  src: url('xclusive/dinnext_n2.woff2') format('woff2'),
+       url('xclusive/dinnext_n2.woff') format('woff');
+}
+
+@font-face {
+  font-family: "DIN Next";
+  font-weight: 300;
+  font-style: normal;
+  /* font-display: swap; */
+  src: url('xclusive/dinnext_n3.woff2') format('woff2'),
+       url('xclusive/dinnext_n3.woff') format('woff');
+}
+
+@font-face {
+  font-family: "DIN Next";
+  font-weight: 400;
+  font-style: normal;
+  /* font-display: swap; */
+  src: url('xclusive/dinnext_n4.woff2') format('woff2'),
+       url('xclusive/dinnext_n4.woff') format('woff');
+}
+
+@font-face {
+  font-family: "DIN Next";
+  font-weight: 500;
+  font-style: normal;
+  /* font-display: swap; */
+  src: url('xclusive/dinnext_n5.woff2') format('woff2'),
+       url('xclusive/dinnext_n5.woff') format('woff');
+}
+
+@font-face {
+  font-family: "DIN Next";
+  font-weight: 700;
+  font-style: normal;
+  /* font-display: swap; */
+  src: url('xclusive/dinnext_n7.woff2') format('woff2'),
+       url('xclusive/dinnext_n7.woff') format('woff');
+}
+
+@font-face {
+  font-family: "DIN Next";
+  font-weight: 800;
+  font-style: normal;
+  /* font-display: swap; */
+  src: url('xclusive/dinnext_n8.woff2') format('woff2'),
+       url('xclusive/dinnext_n8.woff') format('woff');
+}
+
+@font-face {
+  font-family: "DIN Next";
+  font-weight: 900;
+  font-style: normal;
+  /* font-display: swap; */
+  src: url('xclusive/dinnext_n9.woff2') format('woff2'),
+       url('xclusive/dinnext_n9.woff') format('woff');
+}
+
+/* Sækja Georgia Pro og skilgreina */
+
+@font-face {
+  font-family: "Georgia Pro";
+  font-weight: 300;
+  font-style: normal;
+  /* font-display: swap; */
+  src: url('xclusive/georgiapro_n3.woff2') format('woff2'),
+       url('xclusive/georgiapro_n3.woff') format('woff');
+}
+
+@font-face {
+  font-family: "Georgia Pro";
+  font-weight: 400;
+  font-style: normal;
+  /* font-display: swap; */
+  src: url('xclusive/georgiapro_n4.woff2') format('woff2'),
+       url('xclusive/georgiapro_n4.woff') format('woff');
+}
+
+@font-face {
+  font-family: "Georgia Pro";
+  font-weight: 600;
+  font-style: normal;
+  /* font-display: swap; */
+  src: url('xclusive/georgiapro_n6.woff2') format('woff2'),
+       url('xclusive/georgiapro_n6.woff') format('woff');
+}
+
+@font-face {
+  font-family: "Georgia Pro";
+  font-weight: 700;
+  font-style: normal;
+  /* font-display: swap; */
+  src: url('xclusive/georgiapro_n7.woff2') format('woff2'),
+       url('xclusive/georgiapro_n7.woff') format('woff');
+}
+
+@font-face {
+  font-family: "Georgia Pro";
+  font-weight: 900;
+  font-style: normal;
+  /* font-display: swap; */
+  src: url('xclusive/georgiapro_n9.woff2') format('woff2'),
+       url('xclusive/georgiapro_n9.woff') format('woff');
+}
+
+@font-face {
+  font-family: "Georgia Pro";
+  font-weight: 400;
+  font-style: italic;
+  /* font-display: swap; */
+  src: url('xclusive/georgiapro_i4.woff2') format('woff2'),
+       url('xclusive/georgiapro_i4.woff') format('woff');
+}
+
+@font-face {
+  font-family: "Georgia Pro";
+  font-weight: 700;
+  font-style: italic;
+  /* font-display: swap; */
+  src: url('xclusive/georgiapro_i7.woff2') format('woff2'),
+       url('xclusive/georgiapro_i7.woff') format('woff');
+}
+
+
+
+
+
+/* _fonts.scss */
+
+html {
+
+  /* base font size - applied at body/html level */
+  /* --pst-font-size-base: 1rem; */
+
+  /* heading font sizes based on bootstrap sizing */
+  /* --pst-font-size-h1: 2.5rem; */
+  /* --pst-font-size-h2: 2rem; */
+  /* --pst-font-size-h3: 1.75rem; */
+  /* --pst-font-size-h4: 1.5rem; */
+  /* --pst-font-size-h5: 1.25rem; */
+  /* --pst-font-size-h6: 1.1rem; */
+
+  /* smaller than heading font sizes */
+  /* --pst-font-size-milli: 0.9rem; */
+
+  /* Sidebar styles */
+  /* --pst-sidebar-font-size: 0.9rem; */
+  /* --pst-sidebar-font-size-mobile: 1.1rem; */
+  /* --pst-sidebar-header-font-size: 1.2rem; */
+  /* --pst-sidebar-header-font-weight: 600; */
+
+  /* Admonition styles */
+  /* --pst-admonition-font-weight-heading: 600; */
+
+  /* Font weights */
+  /* --pst-font-weight-caption: 300; */
+  --pst-font-weight-heading: 500;
+
+  /* Font family
+  /* These are adapted from https://systemfontstack.com/ */
+  --pst-font-family-base-system: sans-serif;
+  /* --pst-font-family-monospace-system: "SFMono-Regular", "Menlo", "Consolas", "Monaco", "Liberation Mono", "Lucida Console", monospace; */
+  --pst-font-family-base: 'DIN Next', var(--pst-font-family-base-system);
+  --pst-font-family-heading: 'DIN Next', var(--pst-font-family-base-system);
+  /* --pst-font-family-monospace: var(--pst-font-family-monospace-system); */
+}
+
+
+
+
+
+/* body og heading style er í samræmi við rubik.is */
+
+body {
+  letter-spacing: -0.02em;
+  line-height: 1.5;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+  line-height: 1.05;
+  font-weight: 700;
+}
+
+
+
+
+
+/* _admonitions.scss */
+
+/* html {
+  --pst-icon-admonition-default: var(--pst-icon-bell);
+  --pst-icon-admonition-note: var(--pst-icon-info-circle);
+  --pst-icon-admonition-attention: var(--pst-icon-exclamation-circle);
+  --pst-icon-admonition-caution: var(--pst-icon-exclamation-triangle);
+  --pst-icon-admonition-warning: var(--pst-icon-exclamation-triangle);
+  --pst-icon-admonition-danger: var(--pst-icon-exclamation-triangle);
+  --pst-icon-admonition-error: var(--pst-icon-times-circle);
+  --pst-icon-admonition-hint: var(--pst-icon-lightbulb);
+  --pst-icon-admonition-tip: var(--pst-icon-lightbulb);
+  --pst-icon-admonition-important: var(--pst-icon-exclamation-circle);
+  --pst-icon-admonition-seealso: var(--pst-icon-share);
+  --pst-icon-admonition-todo: var(--pst-icon-pencil);
+} */
+
+
+
+
+
+/* _icons.scss */
+
+/* html { */
+
+  /* Font size across all icons */
+  /* --pst-font-size-icon: 1.5rem; */
+
+  /* Font Awesome default icons */
+  /* --pst-icon-check-circle: "\f058"; // fa-solid fa-circle-check */
+  /* --pst-icon-info-circle: "\f05a"; // fa-solid fa-circle-info */
+  /* --pst-icon-exclamation-triangle: "\f071"; // fa-solid fa-triangle-exclamation */
+  /* --pst-icon-exclamation-circle: "\f06a"; // fa-solid fa-circle-exclamation */
+  /* --pst-icon-times-circle: "\f057"; // fa-solid fa-circle-xmark */
+  /* --pst-icon-lightbulb: "\f0eb"; // fa-solid fa-lightbulb */
+  /* --pst-icon-download: "\f019"; // fa-solid fa-download */
+  /* --pst-icon-angle-left: "\f104"; // fa-solid fa-angle-left */
+  /* --pst-icon-angle-right: "\f105"; // fa-solid fa-angle-right */
+  /* --pst-icon-external-link: "\f35d"; // fa-solid fa-up-right-from-square */
+  /* --pst-icon-search-minus: "\f010"; // fa-solid fa-magnifying-glass-minus */
+  /* --pst-icon-github: "\f09b"; // fa-brands fa-github */
+  /* --pst-icon-gitlab: "\f296"; // fa-brands fa-gitlab */
+  /* --pst-icon-share: "\f064"; // fa-solid fa-share */
+  /* --pst-icon-bell: "\f0f3"; // fa-solid fa-bell */
+  /* --pst-icon-pencil: "\f303"; // fa-solid fa-pencil */
+
+  /* Bootstrap icons */
+  /* --pst-breadcrumb-divider: "\f105"; */
+/* } */
+
+
+
+
+
+/* _color.scss */
+
+/* html:not([data-theme]) {
+  --pst-color-primary:#0a7d91;
+  --pst-color-primary-bg:#d0ecf1;
+  --pst-color-secondary:#8045e5;
+  --pst-color-secondary-bg:#e0c7ff;
+  --pst-color-accent:#c132af;
+  --pst-color-accent-bg:#f8dff5;
+  --pst-color-info:#276be9;
+  --pst-color-info-bg:#dce7fc;
+  --pst-color-warning:#f66a0a;
+  --pst-color-warning-bg:#f8e3d0;
+  --pst-color-success:#00843f;
+  --pst-color-success-bg:#d6ece1;
+  --pst-color-attention:var(--pst-color-warning);
+  --pst-color-attention-bg:var(--pst-color-warning-bg);
+  --pst-color-danger:#d72d47;
+  --pst-color-danger-bg:#f9e1e4;
+  --pst-color-text-base:#222832;
+  --pst-color-text-muted:#48566b;
+  --pst-color-heading-color:#fff;
+  --pst-color-shadow:rgba(0,0,0,.1);
+  --pst-color-border:#d1d5da;
+  --pst-color-border-muted:rgba(23,23,26,.2);
+  --pst-color-blockquote-notch:#677384;
+  --pst-color-inline-code:#912583;
+  --pst-color-inline-code-links:#085d6c;
+  --pst-color-target:#f3cf95;
+  --pst-color-table:#14181e;
+  --pst-color-table-row-hover-bg:#b780ff;
+  --pst-color-table-inner-border:#e5e7ea;
+  --pst-color-background:#fff;
+  --pst-color-on-background:#fff;
+  --pst-color-surface:#f3f4f5;
+  --pst-color-on-surface:#222832;
+  --pst-color-link:var(--pst-color-primary);
+  --pst-color-link-hover:var(--pst-color-secondary);
+  --pst-color-table-outer-border:var(--pst-color-surface);
+  --pst-color-table-heading-bg:var(--pst-color-surface);
+  --pst-color-table-row-zebra-high-bg:var(--pst-color-on-background);
+  --pst-color-table-row-zebra-low-bg:var(--pst-color-surface)
+} */
+
+/* html[data-theme=light] {
+  --pst-color-primary-bg:#d0ecf1;
+  --pst-color-secondary-bg:#e0c7ff;
+  --pst-color-accent:#c132af;
+  --pst-color-accent-bg:#f8dff5;
+  --pst-color-info-bg:#dce7fc;
+  --pst-color-warning-bg:#f8e3d0;
+  --pst-color-success-bg:#d6ece1;
+  --pst-color-attention:var(--pst-color-warning);
+  --pst-color-attention-bg:var(--pst-color-warning-bg);
+  --pst-color-danger-bg:#f9e1e4;
+  --pst-color-text-base:#222832;
+  --pst-color-text-muted:#48566b;
+  --pst-color-heading-color:#fff;
+  --pst-color-shadow:rgba(0,0,0,.1);
+  --pst-color-border:#d1d5da;
+  --pst-color-border-muted:rgba(23,23,26,.2);
+  --pst-color-blockquote-notch:#677384;
+  --pst-color-inline-code:#912583;
+  --pst-color-inline-code-links:#085d6c;
+  --pst-color-target:#f3cf95;
+  --pst-color-table:#14181e;
+  --pst-color-table-row-hover-bg:#b780ff;
+  --pst-color-table-inner-border:#e5e7ea;
+  --pst-color-background:#fff;
+  --pst-color-on-background:#fff;
+  --pst-color-surface:#f3f4f5;
+  --pst-color-on-surface:#222832;
+  --pst-color-link:var(--pst-color-primary);
+  --pst-color-link-hover:var(--pst-color-secondary);
+  --pst-color-table-outer-border:var(--pst-color-surface);
+  --pst-color-table-heading-bg:var(--pst-color-surface);
+  --pst-color-table-row-zebra-high-bg:var(--pst-color-on-background);
+  --pst-color-table-row-zebra-low-bg:var(--pst-color-surface);
+  color-scheme:light
+} */
+
+/* html[data-theme=dark] {
+  --pst-color-primary-bg:#042c33;
+  --pst-color-secondary-bg:#341a61;
+  --pst-color-accent:#e47fd7;
+  --pst-color-accent-bg:#46123f;
+  --pst-color-info-bg:#06245d;
+  --pst-color-warning-bg:#652a02;
+  --pst-color-success-bg:#002f17;
+  --pst-color-attention:var(--pst-color-warning);
+  --pst-color-attention-bg:var(--pst-color-warning-bg);
+  --pst-color-danger-bg:#4e111b;
+  --pst-color-text-base:#ced6dd;
+  --pst-color-text-muted:#9ca4af;
+  --pst-color-heading-color:#14181e;
+  --pst-color-shadow:rgba(0,0,0,.2);
+  --pst-color-border:#48566b;
+  --pst-color-border-muted:#29313d;
+  --pst-color-blockquote-notch:#9ca4af;
+  --pst-color-inline-code:#f3c7ee;
+  --pst-color-inline-code-links:#3fb1c5;
+  --pst-color-target:#675c04;
+  --pst-color-table:#fff;
+  --pst-color-table-row-hover-bg:#6432bd;
+  --pst-color-table-inner-border:#364150;
+  --pst-color-background:#14181e;
+  --pst-color-on-background:#222832;
+  --pst-color-surface:#29313d;
+  --pst-color-on-surface:#f3f4f5;
+  --pst-color-link:var(--pst-color-primary);
+  --pst-color-link-hover:var(--pst-color-secondary);
+  --pst-color-table-outer-border:var(--pst-color-surface);
+  --pst-color-table-heading-bg:var(--pst-color-surface);
+  --pst-color-table-row-zebra-high-bg:var(--pst-color-on-background);
+  --pst-color-table-row-zebra-low-bg:var(--pst-color-surface);
+  color-scheme:dark
+} */
+
+/* html[data-theme=light] {
+  --pst-color-primary:#0a7d91;
+  --pst-color-primary-text:#fff;
+  --pst-color-primary-highlight:#053f49;
+  --sd-color-primary:var(--pst-color-primary);
+  --sd-color-primary-text:var(--pst-color-primary-text);
+  --sd-color-primary-highlight:var(--pst-color-primary-highlight);
+  --sd-color-primary-bg:#d0ecf1;
+  --sd-color-primary-bg-text:#14181e;
+  --pst-color-secondary:#8045e5;
+  --pst-color-secondary-text:#fff;
+  --pst-color-secondary-highlight:#591bc2;
+  --sd-color-secondary:var(--pst-color-secondary);
+  --sd-color-secondary-text:var(--pst-color-secondary-text);
+  --sd-color-secondary-highlight:var(--pst-color-secondary-highlight);
+  --sd-color-secondary-bg:#e0c7ff;
+  --sd-color-secondary-bg-text:#14181e;
+  --pst-color-success:#00843f;
+  --pst-color-success-text:#fff;
+  --pst-color-success-highlight:#00381a;
+  --sd-color-success:var(--pst-color-success);
+  --sd-color-success-text:var(--pst-color-success-text);
+  --sd-color-success-highlight:var(--pst-color-success-highlight);
+  --sd-color-success-bg:#d6ece1;
+  --sd-color-success-bg-text:#14181e;
+  --pst-color-info:#276be9;
+  --pst-color-info-text:#fff;
+  --pst-color-info-highlight:#124ab1;
+  --sd-color-info:var(--pst-color-info);
+  --sd-color-info-text:var(--pst-color-info-text);
+  --sd-color-info-highlight:var(--pst-color-info-highlight);
+  --sd-color-info-bg:#dce7fc;
+  --sd-color-info-bg-text:#14181e;
+  --pst-color-warning:#f66a0a;
+  --pst-color-warning-text:#14181e;
+  --pst-color-warning-highlight:#ad4a06;
+  --sd-color-warning:var(--pst-color-warning);
+  --sd-color-warning-text:var(--pst-color-warning-text);
+  --sd-color-warning-highlight:var(--pst-color-warning-highlight);
+  --sd-color-warning-bg:#f8e3d0;
+  --sd-color-warning-bg-text:#14181e;
+  --pst-color-danger:#d72d47;
+  --pst-color-danger-text:#fff;
+  --pst-color-danger-highlight:#9a1d30;
+  --sd-color-danger:var(--pst-color-danger);
+  --sd-color-danger-text:var(--pst-color-danger-text);
+  --sd-color-danger-highlight:var(--pst-color-danger-highlight);
+  --sd-color-danger-bg:#f9e1e4;
+  --sd-color-danger-bg-text:#14181e;
+  --pst-color-light:#f3f4f5;
+  --pst-color-light-text:#14181e;
+  --pst-color-light-highlight:#c9ced2;
+  --sd-color-light:var(--pst-color-light);
+  --sd-color-light-text:var(--pst-color-light-text);
+  --sd-color-light-highlight:var(--pst-color-light-highlight);
+  --sd-color-light-bg:#f7f7f8;
+  --sd-color-light-bg-text:#14181e;
+  --pst-color-muted:#29313d;
+  --pst-color-muted-text:#fff;
+  --pst-color-muted-highlight:#0a0c0f;
+  --sd-color-muted:var(--pst-color-muted);
+  --sd-color-muted-text:var(--pst-color-muted-text);
+  --sd-color-muted-highlight:var(--pst-color-muted-highlight);
+  --sd-color-muted-bg:#5a6c86;
+  --sd-color-muted-bg-text:#fff;
+  --pst-color-dark:#222832;
+  --pst-color-dark-text:#fff;
+  --pst-color-dark-highlight:#030404;
+  --sd-color-dark:var(--pst-color-dark);
+  --sd-color-dark-text:var(--pst-color-dark-text);
+  --sd-color-dark-highlight:var(--pst-color-dark-highlight);
+  --pst-color-black:#14181e;
+  --pst-color-black-text:#fff;
+  --pst-color-black-highlight:#000;
+  --sd-color-black:var(--pst-color-black);
+  --sd-color-black-text:var(--pst-color-black-text);
+  --sd-color-black-highlight:var(--pst-color-black-highlight);
+  --pst-color-white:#fff;
+  --pst-color-white-text:#14181e;
+  --pst-color-white-highlight:#d9d9d9;
+  --sd-color-white:var(--pst-color-white);
+  --sd-color-white-text:var(--pst-color-white-text);
+  --sd-color-white-highlight:var(--pst-color-white-highlight)
+} */
+
+/* html[data-theme=dark] {
+  --pst-color-primary:#3fb1c5;
+  --pst-color-primary-text:#14181e;
+  --pst-color-primary-highlight:#2b7e8d;
+  --sd-color-primary:var(--pst-color-primary);
+  --sd-color-primary-text:var(--pst-color-primary-text);
+  --sd-color-primary-highlight:var(--pst-color-primary-highlight);
+  --sd-color-primary-bg:#042c33;
+  --sd-color-primary-bg-text:#fff;
+  --pst-color-secondary:#9c5ffd;
+  --pst-color-secondary-text:#14181e;
+  --pst-color-secondary-highlight:#6d13fc;
+  --sd-color-secondary:var(--pst-color-secondary);
+  --sd-color-secondary-text:var(--pst-color-secondary-text);
+  --sd-color-secondary-highlight:var(--pst-color-secondary-highlight);
+  --sd-color-secondary-bg:#341a61;
+  --sd-color-secondary-bg-text:#fff;
+  --pst-color-success:#5fb488;
+  --pst-color-success-text:#14181e;
+  --pst-color-success-highlight:#3f8762;
+  --sd-color-success:var(--pst-color-success);
+  --sd-color-success-text:var(--pst-color-success-text);
+  --sd-color-success-highlight:var(--pst-color-success-highlight);
+  --sd-color-success-bg:#002f17;
+  --sd-color-success-bg-text:#fff;
+  --pst-color-info:#79a3f2;
+  --pst-color-info-text:#14181e;
+  --pst-color-info-highlight:#3373eb;
+  --sd-color-info:var(--pst-color-info);
+  --sd-color-info-text:var(--pst-color-info-text);
+  --sd-color-info-highlight:var(--pst-color-info-highlight);
+  --sd-color-info-bg:#06245d;
+  --sd-color-info-bg-text:#fff;
+  --pst-color-warning:#ff9245;
+  --pst-color-warning-text:#14181e;
+  --pst-color-warning-highlight:#f86600;
+  --sd-color-warning:var(--pst-color-warning);
+  --sd-color-warning-text:var(--pst-color-warning-text);
+  --sd-color-warning-highlight:var(--pst-color-warning-highlight);
+  --sd-color-warning-bg:#652a02;
+  --sd-color-warning-bg-text:#fff;
+  --pst-color-danger:#e78894;
+  --pst-color-danger-text:#14181e;
+  --pst-color-danger-highlight:#da485b;
+  --sd-color-danger:var(--pst-color-danger);
+  --sd-color-danger-text:var(--pst-color-danger-text);
+  --sd-color-danger-highlight:var(--pst-color-danger-highlight);
+  --sd-color-danger-bg:#4e111b;
+  --sd-color-danger-bg-text:#fff;
+  --pst-color-light:#f3f4f5;
+  --pst-color-light-text:#14181e;
+  --pst-color-light-highlight:#c9ced2;
+  --sd-color-light:var(--pst-color-light);
+  --sd-color-light-text:var(--pst-color-light-text);
+  --sd-color-light-highlight:var(--pst-color-light-highlight);
+  --sd-color-light-bg:#a3abb2;
+  --sd-color-light-bg-text:#14181e;
+  --pst-color-muted:#f3f4f5;
+  --pst-color-muted-text:#14181e;
+  --pst-color-muted-highlight:#c9ced2;
+  --sd-color-muted:var(--pst-color-muted);
+  --sd-color-muted-text:var(--pst-color-muted-text);
+  --sd-color-muted-highlight:var(--pst-color-muted-highlight);
+  --sd-color-muted-bg:#1d222b;
+  --sd-color-muted-bg-text:#fff;
+  --pst-color-dark:#222832;
+  --pst-color-dark-text:#fff;
+  --pst-color-dark-highlight:#030404;
+  --sd-color-dark:var(--pst-color-dark);
+  --sd-color-dark-text:var(--pst-color-dark-text);
+  --sd-color-dark-highlight:var(--pst-color-dark-highlight);
+  --pst-color-black:#14181e;
+  --pst-color-black-text:#fff;
+  --pst-color-black-highlight:#000;
+  --sd-color-black:var(--pst-color-black);
+  --sd-color-black-text:var(--pst-color-black-text);
+  --sd-color-black-highlight:var(--pst-color-black-highlight);
+  --pst-color-white:#fff;
+  --pst-color-white-text:#14181e;
+  --pst-color-white-highlight:#d9d9d9;
+  --sd-color-white:var(--pst-color-white);
+  --sd-color-white-text:var(--pst-color-white-text);
+  --sd-color-white-highlight:var(--pst-color-white-highlight)
+} */
+
+
+
+
+/* Setja "antialiased" á allt letur í body */
+body {
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Kóði til að láta transparent hluta af SVG eða PNG myndum í pydata theme-inu verða gegnsæann í dark-mode.
+Þetta er alltaf gegnsætt í light-mode, en í dark-mode þarf þessi kóði að vera til staðar */
+html[data-theme="dark"] .bd-content img[src*=".svg"]:not(.only-dark):not(.dark-light) {
+  filter: invert(100%);
+  background: transparent;
+}
+
+/* Setur allar myndir o.fl sem eru merktar sem class="figure" í miðjuna */
+.figure {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+/* Gerir allar myndir o.fl. í 896px (passa að þær séu SVG), svo þær fylla alveg út í síðuna í desktop.
+  Síðan er stærðin á myndunum skilgreint inn í tikz skránum. */
+.figure img {
+  width: 896px;
+}
+
+/* Kemur í veg fyrir að primary sidebar sé horizontally scrollable á mobile */
+.bd-sidebar-primary.bd-sidebar {
+  overflow-x: hidden; /* Disable horizontal scrolling */
+  overflow-y: auto; /* Enable vertical scrolling */
+}
+
+/* Setja margin: 0 á tóman rtd-footer-container inn í primary sidebar, sjá: https://github.com/pydata/pydata-sphinx-theme/issues/1794 */
+#rtd-footer-container {
+  margin: 0 !important;
+}
+
+/* Setja sama style og er í toctree caption á eftirfarandi fyrirsagnir */
+.page-toc.tocsection.onthispage,
+.rubik-social-media-text,
+.rubik-sidebar-nav-root {
+  font-weight: var(--pst-sidebar-header-font-weight);
+  margin-bottom: 0.5rem;
+}
+
+/* Velja justify-content fyrir icon-links */
+.navbar-icon-links {
+  justify-content: space-around;
+}
+
+/* Kemur í veg fyrir að langur texti í navbar-nav noti tvær eða fleiri línu */
+.navbar-item > .navbar-nav {
+  white-space: nowrap;
+}
+
+/* Kemur í veg fyrir að item í navbar-header-items__end (eins og t.d. theme-switcher og search-button-field) noti tvær (eða fleiri) línu */
+.navbar-header-items__end {
+  flex-flow: nowrap !important;
+}
+
+/* Setur texta í logo__title í sömu stærð og texti í navbar-nav */
+.title.logo__title {
+  font-size: 16px !important;
+}
+
+/* Lagar text-decoration-thickness í Safari í logo__title á hover */
+.navbar-brand.logo:hover {
+  text-decoration: none;
+}
+.title.logo__title:hover {
+  text-decoration: underline;
+  text-decoration-skip-ink: none;
+  text-decoration-thickness: max(3px, 0.1875rem, 0.12em);
+}
+
+/* Fjarlægir text-decoration í .navbar-nav li á hover, þar sem Safari renderar það öðruvísi en aðrir vafrar */
+.bd-header .navbar-nav li a.nav-link.dropdown-item:hover {
+  text-decoration: none;
+}
+
+/* Tryggja að "logo og texti" séu alltaf jafn breið og "sidebar" */
+.bd-header .navbar-header-items__start {
+  min-width: 267px;
+}
+.bd-sidebar-primary {
+  min-width: 275px;
+}
+
+/* Samræma útlit á .caption-number fyrir myndir, töflur og kóðablokkir (todo - mögulega þarf að samræma líka fyrir tikz myndir o.fl.) */
+figcaption .caption-number,
+caption .caption-number,
+.code-block-caption .caption-number {
+  color: var(--pst-color-text-muted);
+  font-weight: 700;
+  font-style: normal !important;
+}
+
+/* Samræma útlit á .caption-number::after fyrir myndir, töflur og kóðablokkir (todo - mögulega þarf að samræma líka fyrir tikz myndir o.fl.) */
+figcaption .caption-number::after,
+caption .caption-number::after,
+.code-block-caption .caption-number::after {
+  content: "– ";
+  color: var(--pst-color-text-muted);
+  font-weight: var(--bs-body-font-weight);
+  font-style: normal !important;
+}
+
+/* Samræma útlit á .caption-text fyrir myndir, töflur og kóðablokkir (todo - mögulega þarf að samræma líka fyrir tikz myndir o.fl.) */
+figcaption .caption-text,
+caption .caption-text,
+.code-block-caption .caption-text {
+  color: var(--pst-color-text-muted);
+  font-weight: var(--bs-body-font-weight);
+}
+
+/* Fjalægja padding-right í kóðablokk til að gera ekki of stórt bil á milli numfig_format og caption */
+div.code-block-caption span.caption-number {
+  padding-right: 0;
+}
+
+/* Setja sama font-size á "hash tag merki sem inniheldur hlekk" á töflur, eins og í myndum og kóðablokkum */
+caption a.headerlink {
+  font-size: inherit;
+}
+
+/* Setja horizontal bil á milli items í navbar_persistent í 1rem, en ekki auto */
+.navbar-persistent--mobile {
+  margin-left: 1rem;
+}
+
+/* Tryggja að <header> líti vel út á mjög litlum mobile skjáum (undir 960px) */
+@media (max-width: 960px) {
+  .navbar-brand img {
+    height: 95%;
+  }
+  .bd-header .navbar-header-items__start {
+    min-width: 220px;
+  }
+}
+
+/* Minnka SVG mynd í 80% og bæta við margin-top á bæði secondary-toggle og primary-toggle tökkum */
+.svg-inline--fa.fa-outdent,
+.svg-inline--fa.fa-bars {
+  height: 0.8em;
+  margin-top: 3px;
+}
+
+/* Laga padding á mobile eftir PyData Sphinx Theme update 0.15.3 á secondary-toggle og primary-toggle tökkum */
+.sidebar-toggle.secondary-toggle,
+.sidebar-toggle.primary-toggle {
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+/* Gera SVG myndir úr MathJAX aðeins meira bold */
+mjx-container[jax="SVG"] path[data-c],
+mjx-container[jax="SVG"] use[data-c] {
+  stroke-width: 1px !important;
+}
+
+/* Fjarlægja "Skip to main content" container-inn sem birtist stundum efst á síðu í Safari */
+#pst-skip-link {
+  display: none !important;
+}
+
+/* Fjarlægja fókus hringi og fleiri style sem þurfa ekki að birtast */
+:focus-visible {
+  outline: none !important;
+}
+a.nav-link:focus-visible {
+  box-shadow: none !important;
+}
+.nav-link.nav-internal:focus {
+  color: var(--pst-color-text-muted);
+}
+.nav-link.nav-internal:hover {
+  color: var(--pst-color-link-hover);
+}
+
+/* Laga þetta vandamál hér: https://github.com/pydata/pydata-sphinx-theme/issues/1855 */
+table.indextable.genindextable {
+  border: none !important;
+}
+table.indextable.genindextable td {
+  border-left: none !important;
+}
+table.indextable.genindextable tr {
+  background-color: inherit !important;
+}
+
+/* Láta toggle takkann í toctree hafa sama margin-right on önnur item í primary sidebar */
+nav.bd-links {
+  margin-right: 0;
+}
+
+/* Gera línu fyrir neðan hvert sidebar-primary-item, nema það neðsta */
+.sidebar-primary-item:not(:last-child) {
+  border-bottom: 1px solid var(--pst-color-border);
+}
+
+/* Setja auka margin-bottum á neðsta sidebar-primary-item, svo það sjáist vel á mobile */
+.sidebar-primary-item:last-child {
+  margin-bottom: 4rem;
+}
+
+/* Slökkva á navbar-nav undir 960px, þar sem rubik-sidebar-nav-*.html kemur í staðinn */
+@media (max-width: 960px) {
+  .bd-navbar-elements.navbar-nav {
+    display: none;
+  }
+}
+
+/* Laga bil á milli theme-switcher takkans undir 960px og fyrstu línu */
+.bd-sidebar-primary .sidebar-header-items {
+  margin-bottom: -0.5rem;
+}
+
+/* Láta padding í nav.bd-links vera eins og í rubik-sidebar-nav-*.html */
+nav.bd-links li > a {
+  padding: 0.25rem 1rem;
+}
+
+/* Breyta font-size á external link icon í primary sidebar */
+nav.bd-links li > a.reference.external:after {
+  content: " \f35d";
+  font-size: calc(var(--pst-sidebar-font-size) * 1); /* inherit skilar því sama og --pst-sidebar-font-size */
+  margin-left: 0;
+}
+
+/* Breyta font-size á external link icon í navbar */
+.nav-link.nav-external:after {
+  font-size: inherit;
+}
+
+/* Stilla uppsetningu á rubik-sidebar-nav-section.html */
+ul.current.nav.bd-sidenav {
+  display: flex;
+  flex-direction: column;
+}
+li.toctree-l1.current.active {
+  order: -1; /* Sendir li sem er .current.active efst */
+  border-bottom: 1px solid var(--pst-color-border);
+  padding-bottom: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+/* Uppsetning á rubik-copyright.html */
+.rubik-copyright {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.copyright-text {
+  display: flex;
+  flex-direction: column;
+}
+.copyright-header {
+  color: var(--pst-color-text-muted);
+  font-size: var(--pst-sidebar-font-size);
+  font-weight: 500;
+  line-height: 1.25em;
+  padding-bottom: 0.2rem;
+}
+.copyright-header .licensed {
+  display: inline-block;
+}
+.copyright-header .licensor {
+  display: inline-block;
+}
+.copyright-subtext {
+  color: var(--pst-color-text-muted);
+  font-size: calc(var(--pst-sidebar-font-size) * 0.8);
+  font-weight: 300;
+  line-height: 1.25em;
+  padding-bottom: 0.2rem;
+}
+.no-break {
+  white-space: nowrap;
+}
+.license-badge {
+  display: flex;
+  margin-bottom: 0rem;
+  padding: 4px 0;
+}
+.license-badge a {
+  display: inline-flex;
+}
+
+/* Stilla uppsetningu á .link-style fyrir rubik-edit-this-page.html, rubik-pdf.html, og rubik-sourcelink.html */
+.link-style {
+  display: inline-block;
+  padding: 0;
+  margin: 0;
+  line-height: 1.5;
+  vertical-align: middle;
+}
+
+/* Stilla uppsetningu á .icon-style fyrir rubik-edit-this-page.html, rubik-pdf.html, og rubik-sourcelink.html */
+.icon-style {
+  margin-left: 0px; /* Adjust this value as needed */
+  margin-right: 6px; /* Adjust this value as needed */
+  margin-bottom: 3px;
+  font-size: inherit;
+  line-height: inherit;
+  vertical-align: middle;
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+}
+
+/* Færa fa-icon til vinstri í rubik-sourcelink.html */
+.tocsection.sourcelink .fa-file-lines {
+  margin-left: -1px;
+  margin-right: 7px;
+}
+
+/* Stilla uppsetningu á sphinx_copybutton */
+button.copybtn.success {
+  border-color: var(--pst-color-primary);
+  color: var(--pst-color-primary);
+}
+.highlight button.copybtn:hover {
+  background-color: var(--pst-color-shadow);
+}
+div.highlight button.copybtn:not(.success),
+div.highlight button.copybtn:hover:not(.success) {
+  color: var(--pst-color-text-muted);
+}
+
+
+/* Smá lita-test
+  
+  
+  var(--pst-color-link)
+  :root, [data-bs-theme=light]
+  --pst-color-link: #3fb1c5;
+  --pst-color-link-hover: #9c5ffd;
+  
+  
+  
+  :root {
+      --pst-color-secondary: #d5e3e6 !important;
+  }
+  
+  ::selection {
+      background: #32419a;
+      color: #d5e3e6;
+  }
+  
+   */
+
+
+/*
+Cookiebot stillingar - bæði rit.rubik.is og rubik.is
+*/
+
+/* Fjarlægja logo og "Powered by Cookiebot" */
+#CybotCookiebotDialogHeader,
+#CybotCookiebotDialogPoweredByText,
+#CybotCookiebotDialogDetailFooter,
+.CookiebotWidget-main-logo {
+	display: none !important;
+}
+/* Fjarlægja valin <p> á Cookie Declaration síðunni */
+.CookieDeclarationDialogText,
+.CookieDeclarationIntro,
+.CookieDeclarationLastUpdated {
+	display: none !important;
+}
+/* Laga margin-left sem gerir ráð fyrir að logo sé sýnt */
+#CybotCookiebotDialogTabContent {
+	margin-left: 0 !important;
+}
+/* Setja sama letur og er á restinni á síðunni */
+#CybotCookiebotDialog *,
+#CookiebotWidget * {
+	font-family: var(--pst-font-family-base) !important;
+  letter-spacing: -0.02em !important;
+}
+/* Setja sama letur á <h2> og er á <h5> á síðunni */
+#CybotCookiebotDialog h2 {
+	font-size: 18px !important;
+	font-weight: 800 !important;
+}
+/* Setja border-radius á img í 0px */
+#CybotCookiebotDialog img {
+	border-radius: 0px !important;
+}
+/* Laga padding og margin á mobile */
+@media (min-width: 1280px) {
+	.CybotCookiebotDialogBodyBottomWrapper,
+	.CybotCookiebotScrollContainer {
+		padding-left: 0 !important;
+	}
+}
+@media (min-width:1280px) {
+	#CybotCookiebotDialog .CookieCard .CybotCookiebotDialogDetailBodyContentCookieTypeIntro {
+		padding-left: 37px !important;
+	}
+	.CybotCookiebotDialogDetailBodyContentCookieTypeTableContainer {
+		margin-left: 37px !important;
+	}
+}
+@media (max-width:600px) {
+	#CybotCookiebotDialogBodyLevelButtonsSelectPane .CybotCookiebotDialogBodyLevelButtonWrapper {
+		padding-bottom: .6em !important;
+		padding-top: .6em !important;
+	}
+}
+/* Setja margin-bottom á <p> í "Um" glugganum */
+#CybotCookiebotDialogDetailBodyContentTextAbout p {
+	margin-bottom: 16px !important;
+}
+/* Fjarlægja skrítin <br> sem koma neðst í "General cookie introduction" */
+#CybotCookiebotDialogDetailBodyContentTextAbout br {
+  display: none !important;
+}
+/* Gera "Þín núverandi staða" textann bold á Cookie Declaration síðunni */
+#CookieDeclarationUserStatusLabelOff,
+#CookieDeclarationUserStatusLabelOffDoNotSell,
+#CookieDeclarationUserStatusLabelMulti,
+#CookieDeclarationUserStatusLabelOn {
+	font-weight: 700 !important;
+}
+/* Laga button og label stillingar */
+#CybotCookiebotDialog button,
+#CookiebotWidget button {
+	min-height: auto !important;
+	float: none !important;
+	line-height: 1.5em !important;
+}
+#CybotCookiebotDialog button label,
+#CybotCookiebotDialog button label:after {
+	display: unset !important;
+	line-height: 1.5em !important;
+}
+#CybotCookiebotDialog label {
+	vertical-align: baseline !important;
+	line-height: 1.5em !important;
+}
+.CybotCookiebotDialogDetailBulkConsentCount {
+	vertical-align: baseline !important;
+}
+#CybotCookiebotDialog button:hover,
+.CookiebotWidget-show-consent-details:hover,
+.CookiebotWidget-close:hover {
+	box-shadow: none !important;
+}
+/* Setja background-color (og border-buttom í nav) í sama lit og --pst-color-on-background (#222832) á rit.rubik.is */
+#CybotCookiebotDialog,
+#CybotCookiebotDialog .CybotCookiebotScrollContainer .CybotCookiebotScrollbarContainer,
+#CookiebotWidget #CookiebotWidget-widgetContent,
+#CookiebotWidget #CookiebotWidget-buttons #CookiebotWidget-btn-withdraw {
+	background-color: #222832 !important;
+}
+#CybotCookiebotDialog .CybotCookiebotDialogBodyLevelButtonSlider:before {
+	background-color: #222832 !important;
+}
+#CybotCookiebotDialogNav .CybotCookiebotDialogNavItemLink {
+	border-bottom: solid #222832 !important;
+}
+#CybotCookiebotDialog input:checked+.CybotCookiebotDialogBodyLevelButtonSlider:before,
+#CybotCookiebotDialog[dir=rtl] #CybotCookiebotDialogTabContent input+.CybotCookiebotDialogBodyLevelButtonSlider:before {
+  background-color: #ffffff !important;
+}
+.CybotCookiebotFader  {
+	background-image: linear-gradient(to top, rgb(34,40,50), rgba(34,40,50,0.8), rgba(34,40,50,0)) !important;
+}
+/* Setja consent-details-box í sama lit og --pst-color-background (#14181e) á rit.rubik.is */
+#CookiebotWidget .CookiebotWidget-consent-details .CookiebotWidget-consent-details-box {
+	background-color: #14181e !important;
+}
+/* Gera border á CookiebotWidget eins og í CybotCookiebotDialog */
+#CookiebotWidget .CookiebotWidget-header {
+	border-bottom: 1px solid rgba(255, 255, 255, 0.08) !important;
+}
+#CookiebotWidget #CookiebotWidget-buttons {
+	border-top: 1px solid rgba(255, 255, 255, 0.08) !important;
+}
+/* Gera invert á CybotExternalLinkArrow */
+.CybotExternalLinkArrow {
+	filter: invert(100%) !important;
+}
+/* Setja allar :before stillingar á important, til að override-a það sem síðan gerir */
+.CybotCookiebotDialogDetailBodyContentCookieContainerButton:before,
+.CybotCookiebotDialogDetailBodyContentIABv2Tab:before {
+	border-radius: unset !important;
+	border-width: .15em .15em 0 0 !important;
+	display: inline-block !important;
+	transition-duration: 0s !important;
+	background: transparent !important;
+	top: .6em !important;
+	transform: rotate(-45deg) !important;
+}
+.CybotCookiebotDialogDetailBodyContentCookieContainerButton.CybotCookiebotDialogCollapsed:before,
+.CybotCookiebotDialogDetailBodyContentIABv2Tab.CybotCookiebotDialogCollapsed:before {
+	top: .35em !important;
+	transform: rotate(-225deg) !important;
+}

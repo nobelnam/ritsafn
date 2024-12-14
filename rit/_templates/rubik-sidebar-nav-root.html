@@ -1,0 +1,16 @@
+{%- set rubik_sidebar_nav_root = generate_toctree_html(
+  "sidebar",
+  startdepth=0,
+  show_nav_level=theme_show_nav_level | int,
+  maxdepth=theme_navigation_depth | int,
+  collapse=theme_collapse_navigation | tobool,
+  includehidden=theme_sidebar_includehidden | tobool,
+  titles_only=True
+) -%}
+
+<nav class="bd-docs-nav bd-links" aria-label="{{ _('Section Navigation') }}">
+<div class="rubik-sidebar-nav-root" role="heading" aria-level="1">{{ _('Section Navigation') }}</div>
+  <div class="bd-toc-item navbar-nav">
+    {{ rubik_sidebar_nav_root }}
+  </div>
+</nav>
